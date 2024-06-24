@@ -1,0 +1,188 @@
+What Is Angular?
+Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.
+As a framework, Angular has clear advantages while also providing a standard structure for developers to work with. 
+It enables users to create large applications in a maintainable manner. 
+
+Features of Angular
+1. Document Object Model 
+DOM (Document Object Model) treats an XML or HTML document as a tree structure in which each node represents a part of the document.
+Angular uses regular DOM. Consider that ten updates are made on the same HTML page. Instead of updating the ones that were already updated,
+Angular will update the entire tree structure of HTML tags.
+
+2. TypeScript 
+TypeScript defines a set of types to JavaScript, which helps users write JavaScript code that is easier to understand. 
+All of the TypeScript code compiles with JavaScript and can run smoothly on any platform. TypeScript is not compulsory for developing an Angular application.
+However, it is highly recommended as it offers better syntactic structure—while making the codebase easier to understand and maintain. 
+
+3. Data Binding
+Data binding is a process that enables users to manipulate web page elements through a web browser. It employs dynamic HTML and does not require complex scripting or programming.
+Data binding is used in web pages that include interactive components, such as calculators, tutorials, forums, and games. 
+It also enables a better incremental display of a web page when pages contain a large amount of data. 
+Angular uses the two-way binding. The model state reflects any changes made in the corresponding UI elements.
+Conversely, the UI state reflects any changes in the model state. This feature enables the framework to connect the DOM to the model data through the controller.
+4. Testing :
+Angular uses the Jasmine testing framework. The Jasmine framework provides multiple functionalities to write different kinds of test cases. Karma is the task-runner for the tests that uses 
+a configuration file to set the start-up, reporters, and testing framework.
+Now that you’re familiar with Angular’s basic features, you need to understand its architecture if you want to work with Angular daily. You can also expand your
+Angular knowledge by taking the Angular Certification Training Course and 
+learning concepts such as TypeScript, Bootstrap Grid System, dependency injections, SPA, forms, pipes, promises, observables, and Angular class testing.
+
+1. Modules
+An Angular app has a root module, named AppModule, which provides the bootstrap mechanism to launch the application.
+
+2. Components
+Each component in the application defines a class that holds the application logic and data. A component generally defines a part of the user interface (UI).
+3. Templates
+The Angular template combines the Angular markup with HTML to modify HTML elements before they are displayed. There are two types of data binding: 
+
+Event binding: Lets your app respond to user input in the target environment by updating your application data.
+Property binding: Enables users to interpolate values that are computed from your application data into the HTML.
+4. Metadata
+Metadata tells Angular how to process a class. It is used to decorate the class so that it can configure the expected behavior of a class.
+
+5. Services
+When you have data or logic that isn’t associated with the view but has to be shared across components, a service class is created. 
+The class is always associated with the @Injectible decorator.
+
+6. Dependency Injection
+This feature lets you keep your component classes crisp and efficient. It does not fetch data from a server, validate the user input, or 
+log directly to the console. Instead, it delegates such tasks to the services.
+
+Angular comes with its own set of advantages and disadvantages. The next two sections briefly explain them.
+*********************************************************************************************************************************************************************
+JavaScript is the most commonly used client-side scripting language. 
+It is written into HTML documents to enable interactions with web pages in many unique ways.
+As a relatively easy-to-learn language with pervasive support, it is well-suited to develop modern applications. 
+But is JavaScript ideal for developing single-page applications that require modularity, testability, and developer productivity? Perhaps not. 
+These days, we have a variety of frameworks and libraries designed to provide alternative solutions. With respect to front-end web development,
+Angular addresses many, if not all, of the issues developers face when using JavaScript on its own.
+
+What Is Angular?
+Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.
+As a framework, Angular has clear advantages while also providing a standard structure for developers to work with. It enables users to create large applications in a maintainable manner. 
+
+Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.
+As a framework, 
+Angular has clear advantages while also providing a standard structure for developers to work with.
+AngularJS is a popular open-source framework that simplifies web development by creating interactive single-page applications (SPAs). 
+Unlike traditional websites that load new pages for each click, SPAs offer a smoother user experience by updating content on the same page.
+
+AngularJS makes this possible by transforming static HTML into dynamic content that adapts to user interactions.
+Features like data binding and dependency injection streamline development, saving you time and effort. With regular updates and a large community, 
+AngularJS ensures your web applications stay modern and efficient.
+
+AngularJS is a JavaScript Framework
+AngularJS is a JavaScript framework that can be used in 2 ways given below:
+******************************************************************************************************************************************
+Why Choose AngularJS?
+Easy to Work With: AngularJS requires only basic knowledge of HTML, CSS, and JavaScript. You don’t need to be an expert;
+just bring your curiosity and creativity.
+Time-Saving Components: AngularJS allows you to work with reusable components, saving time and reducing unnecessary code.
+Components are the building blocks of your application.
+Ready-to-Use Templates: AngularJS leverages plain HTML templates, which it compiles and makes ready for use. 
+No complex setup—just write your HTML and let AngularJS do the heavy lifting.
+Directives: AngularJS extends HTML with custom elements and attributes called directives.
+These enable you to create reusable components and define custom behaviors for your application. 
+Directives make it easier to manipulate the DOM, handle events, and encapsulate complex UI logic within a single component.
+*****************************************************************************************************************************************
+Steps to Install Angular JS using Angular CLI
+Step 1: Install the Angular CLI
+npm install - g @angular/cli
+Step-2: Initialize new project using the below command
+ng new my-app
+Step-3: Go to your project directory
+cd my-app
+Angular JS Project structure
+Step-4: Run the application using the following command in the terminal
+ng serve 
+******************************************************************************************
+
+Steps to Create First Angular App
+Example: This example illustrates the basic Hello World app using Angular JS.
+
+
+// Filename - app.component.ts
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: '<h1>Hello World!</h1>',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+}
+
+**********************************************************************************************
+
+History of AngularJS
+AngularJS was first developed in 2008-2009 by Miško Hevery and Adam Abrons at Brat Tech LLC. Its original purpose was to provide software for an online JSON storage service and simplify the development of enterprise applications that were valued by the megabyte. Currently, AngularJS is maintained by Google. Version 1.6, which introduced the concept of component-based application architecture, was the first release. This version removed the Sandbox, which was responsible for security, despite the fact that it had several vulnerabilities that could bypass it.
+
+Key Features of AngularJS
+
+Model-View-Controller (MVC) Architecture:
+Model: Manages data and logic, responding to requests from the view and instructions from the controller.
+View: Displays application data to users.
+Controller: Orchestrates communication between the model and view, updating the model based on user interactions.
+Filters and Data Transformation:
+AngularJS provides powerful filters for transforming data before displaying it in templates. Common filters include filter, orderBy, and currency.
+You can also create custom filters tailored to your application’s needs.
+Routing and Single-Page Applications (SPAs):
+Implement client-side routing to create SPAs.
+Handle route parameters and navigation seamlessly.
+Services and Dependency Injection:
+Services are reusable components that provide specific functionality.
+Dependency injection ensures loose coupling between components, making your code more maintainable.
+Custom Directives and Components:
+Build reusable components using custom directives.
+Isolate scope and communicate between components.
+Testing AngularJS Applications:
+Write unit tests using Jasmine and Karma.
+Explore end-to-end testing with Protractor.
+Advanced Topics:
+Dive into promises and asynchronous programming.
+Interact with RESTful APIs.
+Optimize performance and follow best practices.
+Applications of AngularJS
+Dynamic Forms:
+AngularJS excels at creating dynamic forms with real-time validation and feedback.
+Real-Time Dashboards:
+Build interactive dashboards that update in real time based on user interactions.
+Collaborative Apps:
+AngularJS is perfect for chat applications and collaborative document editing.
+E-Commerce Platforms:
+Create seamless shopping experiences with AngularJS-powered product catalogs and checkout processes.
+Advantages of AngularJS
+It facilitates the Two-way Binding that helps to render correspondingly the changes made to the view or the model.
+It helps to create a responsive web application, along with providing the prototyping that can be utilized to load the application faster.
+It uses the concept of directive that helps to add functionality to the application. For this,
+the overall length of the code reduces along with discarding the repetition of the code that is specific to perform the particular task.
+********************************************************************************************************************************************************
+
+AngularJS
+1.Supports mode-view component design
+2.JavaScript
+3.No mobile browser support
+4.Not as manageable as Angular, but ideal for small applications
+5.Uses $routeprovider.when() for routing configuration.
+6.Not as fast as Angular.
+**********************************************************************************************************************************************************
+Angular
+1.Uses directives and components
+2.Microsoft’s TypeScript
+3.Supported by all popular mobile browsers
+4.Easier to build and maintain large applications
+5.Uses @Route Config{(…)} for routing configuration
+6.Faster than AngularJS
+***********************************************************************************************************************************************************
+Types of Angular Forms
+There are two types of form building supported by Angular Forms. 
+
+Template-Driven Approach 
+Reactive Approach 
+Template-Driven Approach
+In this method, the conventional form tag is used to create forms. Angular automatically interprets and creates a form object representation for the tag. 
+Controls can be added to the form using the NGModel tag. Multiple controls can be grouped using the NGControlGroup module. 
+A form value can be generated using the “form.value” object. Form data is exported as JSON values when the submit method is called. 
+Basic HTML validations can be used to validate the form fields. In the case of custom validations, directives can be used. 
+Arguably, this method is the simplest way to create an Angular App. 
